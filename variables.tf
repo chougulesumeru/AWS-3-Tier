@@ -26,3 +26,20 @@ variable "environment" {
   type        = string
   description = "dev environment for ec2 instance"
 }
+
+
+variable "vpc_cidr" {
+  default     = "10.1.0.0/16"
+  type        = string
+  description = "vpc cidr block"
+}
+
+variable "public_subnet_cidrs" {
+  default = ["10.77.10.0/24", "10.77.11.0/24"]
+  type    = list(string)
+}
+
+variable "private_subnet_cidrs" {
+  default = ["10.77.20.0/24", "10.77.21.0/24"]
+  type    = list(string)
+}
