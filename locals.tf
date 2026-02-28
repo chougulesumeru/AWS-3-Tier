@@ -4,4 +4,7 @@ locals {
     tags ={
         name= "${project_name}-main"
     }
+
+    depends_on= [aws_internate_gateway.igw]
 }
+
