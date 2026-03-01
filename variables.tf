@@ -10,9 +10,9 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  default     = null
+  default     = "terra-3-tier-key"
   type        = string
-  description = "existing ec2 key-pair"
+  description = "key-pair for your instance"
 }
 
 variable "project_name" {
