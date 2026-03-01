@@ -43,3 +43,15 @@ variable "private_subnet_cidrs" {
   default = ["10.77.20.0/24", "10.77.21.0/24"]
   type    = list(string)
 }
+
+variable "ami_id" {
+  default     = "ami-xxxxxxxxxxxx"
+  type        = string
+  description = "this is ami-id for bastion instance"
+}
+
+variable "ami_id_private" {
+  default     = "ami-xzxxxxxxxxxx"
+  type        = string
+  description = "this is a ami-id for private application server"
+}
